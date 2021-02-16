@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Creepster:regular&display=swap');
+@font-face {
+	font-family: 'VlaShu';
+	src: url('../fonts/VlaShu.woff2') format('woff2'), url('../fonts/VlaShu.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Стили обнуления */
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a, a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+body {
+	font-family: 'Arial', serif;
+	font-size: 18px;
+	line-height: 1.4;
+}
+
+/* --------------- */
+
+.wrapper {
+	background: url('../img/bg.jpg') center no-repeat fixed;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.main__title {
+	font-family: 'Ruslan Display', cursive;
+	font-size: 45px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 30px;
+	letter-spacing: 7px;
+	text-decoration: underline red;
+}
+
+.main__title>span {
+	color: red;
+}
+
+.menu__list {
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 30px;
+	margin-bottom: 80px;
+}
+
+.menu__item {
+	display: inline-block;
+	margin-right: 5px;
+	padding: 5px;
+}
+
+.menu__item:hover {
+	box-shadow: 0 0 10px 0 #3498db inset;
+	border-radius: 10px;
+}
+
+.menu__item:active {
+	background-color: gold;
+}
+
+.menu__link {
+	color: aqua;
+	padding: 10px;
+}
+
+.box-hover {
+	background: url('../img/wallpapers-nature-023.jpg') fixed;
+	margin-bottom: 70px;
+}
+
+.box-button {
+	padding: 20px 0;
+}
+
+.box-hover__title {
+	color: red;
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 20px;
+	letter-spacing: 10px;
+}
+
+.button, .button5 {
+	padding: 12px 20px;
+	display: block;
+	width: 200px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 5px;
+	margin: 20px auto 20px;
+	line-height: 2;
+	border: 2px solid blue;
+	border-radius: 10px;
+	background-color: #3498db;
+}
+
+.button1 {
+	border: 2px solid blue;
+	border-radius: 10px;
+}
+
+.button1:hover {
+	border: 2px solid red;
+	font-family: 'Creepster', cursive;
+	letter-spacing: 20px;
+	background-color: #ccc;
+	color: red;
+}
+
+.button2 {
+	border: 2px solid blue;
+	border-radius: 10px;
+}
+
+.button2:hover {
+	color: coral;
+	box-shadow: 0 0 40px 40px #34db5e inset;
+	letter-spacing: 5px;
+}
+
+.button3:hover {
+	background: white url('../img/small.jpg') 10px 10px no-repeat;
+	color: gold;
+	font-weight: 700;
+	letter-spacing: 5px;
+	text-decoration: line-through;
+}
+
+.button4:hover {
+	background-color: white;
+	color: black;
+}
+
+.button4:hover::before {
+	content: '';
+	display: inline-block;
+	background: url('../img/20.jpg') 0 0 no-repeat;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.button4:hover::after {
+	content: '';
+	display: inline-block;
+	background: url('../img/20.jpg') 0 0 no-repeat;
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+}
+
+.button5 {
+	background-color: inherit;
+	box-shadow: 0 0 10px 40px #3498db inset;
+}
+
+.button5:hover {
+	box-shadow: 0 0 10px 0px #3498db inset;
+}
+
+.box-button__text {
+	padding: 30px;
+	display: none;
+}
+
+.button6:hover~.box-button__text {
+	font-weight: 700;
+	letter-spacing: 5px;
+	display: block;
+	color: grey;
+}
+
+.box-target {
+	background: url('../img/ocean.jpg') 0 0 / 100px repeat-y, url('../img/ocean.jpg') 0 0 / 100px repeat-x, url('../img/ocean.jpg') 100% 0 / 100px repeat-y, url('../img/ocean.jpg') 0 100% / 100px repeat-x;
+	height: 750px;
+	padding-top: 150px;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.box-target__link, .box__link {
+	display: block;
+	padding: 10px 20px;
+	color: #000;
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+	max-width: 200px;
+	margin: 0 auto;
+	cursor: pointer;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+
+.box-target__link:hover, .box__link:hover {
+	background-color: #ccc;
+}
+
+.box-target__link:active {
+	color: red;
+	background-color: grey;
+}
+
+.box-target__link:focus {
+	border: lightskyblue;
+}
+
+.box-target__hidden {
+	height: 300px;
+	background: url('../img/smailiki.jpg') center no-repeat;
+	margin-bottom: 20px;
+	display: none;
+}
+
+.box-target__hidden:target {
+	display: block;
+}
+
+.box-target__text {
+	padding: 0 20px;
+	margin-bottom: 20px;
+}
+
+.box-target__img {
+	height: 70px;
+	filter: drop-shadow(10px 10px 15px black);
+}
+
+.box-child {
+	background-color: rgba(234, 236, 240, 0.2);
+	margin-bottom: 50px;
+}
+
+.box-child__text {
+	font-family: 'Montserrat Alternates', sans-serif;
+	padding: 20px 30px;
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+
+.box-child span {
+	border: 1px solid black;
+	background-color: rgba(234, 236, 240, 0.4);
+	display: block;
+	font-size: 35px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.box-child__title {
+	text-align: center;
+	padding: 20px;
+	font-size: 35px;
+}
+
+.box-child *:first-child {
+	background-color: lime;
+	text-align: center;
+}
+
+.box-child span:first-of-type {
+	color: blue;
+}
+
+.box-child span:nth-of-type(2n) {
+	color: gold;
+}
+
+.box-child__text:last-child {
+	color: red;
+}
+
+.box-child__text::first-line {
+	background-color: aqua;
+	letter-spacing: 5px;
+}
+
+.box-child__title::first-letter {
+	color: red;
+}
+
+.footer {
+	/*height: 100px;*/
+	background-color: rgb(225, 220, 231, 0.2);
+	text-align: center;
+	height: 150px;
+}
+
+.footer__link {
+	display: inline-block;
+	color: #fff;
+	padding: 20px;
+	font-size: 25px;
+	border-bottom: 3px solid white;
+}
+
+.footer__link:hover {
+	color: darkorange;
+	border-bottom: 3px solid darkorange;
+}
+
+.footer__link:focus {
+	color: rgb(68, 0, 255);
+	border: 2px dotted orange;
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Homework 8</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header class="header">
+
+			<div class="container">
+
+				<nav class="menu">
+
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link" href="#">
+								hover
+							</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link" href="#">
+								target
+							</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link" href="#">
+								active
+							</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link" href="#">
+								focus
+							</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link" href="#">
+								first child
+							</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link" href="#">
+								first of type
+							</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link" href="#">
+								first-line
+							</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link" href="#">
+								first-letter
+							</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link" href="#">
+								after
+							</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link" href="#">
+								before
+							</a>
+						</li>
+
+					</ul>
+
+				</nav>
+
+			</div>
+
+		</header>
+
+
+		<main class="main">
+
+			<div class="container">
+
+				<h1 class="main__title">
+					Псевдоклассы <span>и</span> Псевдоэлементы
+				</h1>
+
+				<div class="box-hover">
+
+					<div class="box-button">
+
+						<a href="#" class="button button1">
+							button
+						</a>
+
+						<a href="#" class="button button2">
+							button
+						</a>
+
+						<a href="#" class="button button3">
+							button
+						</a>
+
+						<a href="#" class="button button4">
+							button
+						</a>
+
+						<a href="#" class="button5">
+							button
+						</a>
+
+						<a href="#" class="button button6">
+							button
+						</a>
+
+						<p class="box-button__text">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nesciunt facere recusandae
+							consequatur quam? Illo labore soluta eveniet officiis? At quasi soluta voluptatum! Nobis porro
+							earum quam, facere ea eveniet?
+
+						</p>
+
+						<p class="box-button__text">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nesciunt facere recusandae
+							consequatur quam? Illo labore soluta eveniet officiis? At quasi soluta voluptatum! Nobis porro
+							earum quam, facere ea eveniet?
+
+						</p>
+
+						<p class="box-button__text">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nesciunt facere recusandae
+							consequatur quam? Illo labore soluta eveniet officiis? At quasi soluta voluptatum! Nobis porro
+							earum quam, facere ea eveniet?
+
+						</p>
+
+						<p class="box-button__text">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nesciunt facere recusandae
+							consequatur quam? Illo labore soluta eveniet officiis? At quasi soluta voluptatum! Nobis porro
+							earum quam, facere ea eveniet?
+
+						</p>
+
+					</div>
+
+
+				</div>
+
+				<div class="box-target">
+
+					<a id="title" class="box-target__link" href="#open">
+						Открыть
+					</a>
+
+					<div id="open" class="box-target__hidden">
+
+					</div>
+
+					<!--<p class="box-target__text">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore vitae eius qui omnis placeat amet
+						autem rem eaque asperiores quae. Perspiciatis, fuga? Nam deleniti sint expedita voluptatibus,
+						facere temporibus commodi!
+					</p>
+					
+					<p class="box-target__text">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore vitae eius qui omnis placeat amet
+						autem rem eaque asperiores quae. Perspiciatis, fuga? Nam deleniti sint expedita voluptatibus,
+						facere temporibus commodi!
+					</p>
+
+					<p class="box-target__text">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore vitae eius qui omnis placeat amet
+						autem rem eaque asperiores quae. Perspiciatis, fuga? Nam deleniti sint expedita voluptatibus,
+						facere temporibus commodi!
+					</p>
+
+					<p class="box-target__text">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore vitae eius qui omnis placeat amet
+						autem rem eaque asperiores quae. Perspiciatis, fuga? Nam deleniti sint expedita voluptatibus,
+						facere temporibus commodi!
+					</p>-->
+
+					<a href="#box-child" class="box__link">
+						закрыть
+					</a>
+
+				</div>
+
+				<div class="box-child" id="box-child">
+					<h3 class="box-child__title">
+						*:first-child {background-color: lime;}
+					</h3>
+
+					<span>:first-of-type{color:blue}</span>
+
+					<h3 class="box-child__title">
+						Заголовок h3::first-letter {
+							color: red;
+						}
+					</h3>
+
+					<p class="box-child__text">
+						::first-line {background-color: aqua;}, ::first-line {
+							background-color: aqua;}
+						ratione alias reiciendis dolore quia modi explicabo iste est nulla delectus, quos quasi sit officiis
+						odio ipsam perferendis?
+					</p>
+
+					<h3 class="box-child__title">
+						Заголовок h3::first-letter {
+							color: red;
+						}
+					</h3>
+
+					<p class="box-child__text">
+						::first-line {background-color: aqua;}, ::first-line {
+							background-color: aqua;}
+						ratione alias reiciendis dolore quia modi explicabo iste est nulla delectus, quos quasi sit officiis
+						odio ipsam perferendis?
+					</p>
+
+					<span>span:nth-of-type(2n) {color: gold;}</span>
+
+					<p class="box-child__text">
+						::first-line {background-color: aqua;}, ::first-line {
+							background-color: aqua;}
+						ratione alias reiciendis dolore quia modi explicabo iste est nulla delectus, quos quasi sit officiis
+						odio ipsam perferendis?
+					</p>
+
+					<h3 class="box-child__title">
+						Заголовок h3::first-letter {
+							color: red;}
+					</h3>
+
+					<p class="box-child__text">
+						::first-line {background-color: aqua;}, ::first-line {
+							background-color: aqua;}
+						ratione alias reiciendis dolore quia modi explicabo iste est nulla delectus, quos quasi sit officiis
+						odio ipsam perferendis?
+					</p>
+
+					<span>span</span>
+
+					<p class="box-child__text">
+						::first-line {background-color: aqua;}, ::first-line {
+							background-color: aqua;}
+						ratione alias reiciendis dolore quia modi explicabo iste est nulla delectus, quos quasi sit officiis
+						odio ipsam perferendis?
+					</p>
+
+					<h3 class="box-child__title">
+						Заголовок h3::first-letter {
+							color: red;}
+					</h3>
+
+					<p class="box-child__text">
+						::first-line {background-color: aqua;}, ::first-line {
+							background-color: aqua;}
+						ratione alias reiciendis dolore quia modi explicabo iste est nulla delectus, quos quasi sit officiis
+						odio ipsam perferendis?
+					</p>
+
+					<span>span:nth-of-type(2n) {color: gold;}</span>
+
+					<p class="box-child__text">
+						::first-line {background-color: aqua;}, ::first-line {
+							background-color: aqua;}
+						ratione alias reiciendis dolore quia modi explicabo iste est nulla delectus, quos quasi sit officiis
+						odio ipsam perferendis?
+					</p>
+
+					<span>:last-child(color: red;)</span>
+
+					<p class="box-child__text">
+						::first-line {background-color: aqua;}, ::first-line {
+							background-color: aqua;}
+						ratione alias reiciendis dolore quia modi explicabo iste est nulla delectus, quos quasi sit officiis
+						odio ipsam perferendis?
+					</p>
+
+				</div>
+
+			</div>
+
+		</main>
+
+		<footer class="footer">
+
+			<div class="container">
+				
+				<a href="#" class="footer__link"> На верх</a>
+
+			</div>
+
+		</footer>
+
+	</div>
+
+</body>
+
+</html>
